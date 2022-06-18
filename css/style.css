@@ -1,0 +1,228 @@
+/*
+Theme Name: KenzieFlix
+Author: Kenzie Academy
+Author URI: kenzie.com.br;
+Version: 1.0
+ 
+--------------------------------------------
+SUGESTÃO DE ESTRUTURAÇÃO BASE 
+--------------------------------------------
+**** DECLARAÇÃO DE VARIÁVEIS
+**** BODY
+**** TOPO
+**** RODAPÉ
+**** PÁGINA INICIAL
+*/
+
+/* VARIÁVEIS */
+:root{
+  background-color: #00002E;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  margin: 0 auto;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body{
+	margin: 0;
+	color: white;
+	display: inline;
+	justify-content: center;
+	align-items: center;
+}
+
+div.pg-home{
+	max-width:100%;
+	display: flex;
+	justify-content: center;
+}
+
+/*RODAPÉ*/
+footer{
+	margin-top: 40px;
+	display: flex;
+	justify-content: center;
+	box-sizing: border-box;
+}
+
+.btn{
+	width: 200px;
+	height: 40px;
+	background-color: #00002E;
+	color: white;
+	border: 1px solid white;
+	border-radius: 2px;
+	font-size: 16px;
+}
+
+/*PÁGINA INICIAL*/
+.pg-home ul{
+	padding: 0;
+	margin: 0;
+	width: 858px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+
+}
+
+figcaption {
+	display: none;
+}
+
+h2{
+	font-size: 75px;
+	color: white;
+	text-align: center;
+	margin: 20px 0px 50px 0px;
+	display:flex;
+	justify-content: center;
+}
+
+.kenzieflix{
+	display: block;
+	justify-content: center;
+	align-items: center;
+}
+
+
+.topo img{
+	width: 250px;
+	height: 65px;
+	margin-top: -15px;
+	margin-left: -45px;
+}
+	
+li{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 186px;
+	list-style: none;
+	text-align: center;
+	flex-direction: column;
+	box-sizing: border-box;
+}
+
+h3{
+	margin: 0;
+}
+
+.usuarios img{
+	max-width: 100%;
+	height:100%;
+}
+
+.usuarios figure{
+	max-width: 186px;
+	height:186px;
+	margin: 0;
+	margin-bottom: 20px;
+	margin-top: 0;
+	border: 1px transparent;
+}
+
+.addPerfil img{
+	width: 90px;
+	height:90px;
+}
+
+.addPerfil figure{
+	display:flex;
+	justify-content:center;
+	align-items: center;
+	margin: 0px 40px 16px 40px;
+}
+
+li img:hover {
+	border: 2px solid white;
+	cursor: pointer;
+
+} 
+
+.btn:hover{
+	border: 2px solid white;
+	cursor: pointer;
+}
+
+@media (max-width: 830px){
+	html{
+		width: 250px;
+	}
+	.topo img {
+		display: flex;
+		justify-content:center;
+		box-sizing: border-box;
+		margin-left: -45px;
+		height: 65px;
+	}
+
+	section.kenzieflix{
+		justify-content:center;
+		max-height: 300px;
+		
+	}
+
+	.pg-home ul {
+		margin: 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		align-content: space-between;
+	}
+
+	ul.usuarios{
+		width: 400px;
+		height: 320px;
+		flex-wrap: wrap;
+	}
+
+	.usuarios figure{
+		width: 120px;
+		height:120px;
+		margin-bottom: 10px;
+	}
+
+	li.usuario1 li.usuario3{
+		margin-right: -16px;
+	}
+
+	li.usuario2 li.addPerfil{
+		margin-left: -16px;
+	}
+
+	h2 {
+		font-size:35px;
+		margin-bottom: 20px;
+	}
+}	
+
+@media (max-width: 425px){
+	ul.usuarios{
+		width: 400px;
+		height: 300px;
+		flex-wrap: wrap;
+	}
+	
+	.usuarios figure{
+		width: 100px;
+		height:100px;
+		margin-bottom: 10px;
+	}
+
+	h2 {
+		font-size:30px;
+		margin-bottom: 20px;
+	}
+
+	.btn{
+		width: 150px;
+		height: 30px;
+	}
+}	
+
+
+
+
+
